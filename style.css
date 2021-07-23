@@ -7,7 +7,6 @@
     height: 5rem;
     display: flex;
     align-items: center;
-    margin:22px 25px;
     background: linear-gradient(to right,rgb(193, 245, 228),rgb(204, 204, 248));
 }
 .header-name {
@@ -48,12 +47,14 @@
     .navigators-cont {
         margin-left: 0.8rem;
         gap: 0rem;
+        font-size: 0.8rem;
     }
     .navigator {
         margin: 0.3rem;
+        font-size: 0.8rem;
     }
     .main-page-img{
-        left:200px;
+        left:100px;
     }
 }
 
