@@ -14,12 +14,7 @@ body{
     height: 90px;
     box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.8);
 }
-/*span{
-    font-family: 'Raleway', sans-serif;
-    font-size: 2.0rem;
-    color:white;
-}
-*/
+
 .logo-img{
     height: 80px;
     width: 80px;
@@ -196,12 +191,12 @@ a{
      height:35px !important;
  }
  .footer {
-    padding-top:7px;
+    padding-top:5px;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: #a683e3;
     color: white;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
