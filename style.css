@@ -159,6 +159,39 @@ button:active{
 		display: block;
 		width: 100%;
 	}
-	
-
 }
+
+.container-fluid{
+    background-color: #e4e9fd;
+    width:100%;
+    height: auto;
+}
+.aboutus{
+    width:450px !important;
+    padding-top:10px;
+    padding-left:60px;
+    color:#a683e3;
+}
+.socials{
+    padding-top:10px;
+} 
+h2,h3{
+    font-family: 'Raleway', sans-serif;
+    color:rgb(108, 20, 116);
+}
+a{
+     text-decoration: none;
+     color:#a683e3;
+ }
+
+ .subscribe{
+     padding-top:60px;
+     margin-right:200px;
+ }
+ .input-group{
+     width:400px;
+     text-align: left !important;
+ }
+ .form-control{
+     height:35px !important;
+ }
