@@ -8,35 +8,37 @@ body{
 
 /* NAVBAR */
 .navbar{
-    position: relative;
-    left:350px;
+    margin:0 auto;
     background-color: #a683e3;
     width: 50%;
     height: 90px;
+    box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.8);
 }
-span{
+/*span{
     font-family: 'Raleway', sans-serif;
-    font-size: 2.3rem;
+    font-size: 2.0rem;
     color:white;
 }
-
+*/
 .logo-img{
     height: 80px;
     width: 80px;
     border-radius: 50%;
     margin-left: 40px;
     padding-bottom: 5px;
+    padding-top: 3px;
 }
+
 h1{
     font-family: 'Raleway', sans-serif;
-    padding:0 0 7px 7px;
+    padding:0 0 5px 7px;
     text-decoration: underline;
     color: purple ;
 }
 .box{
 	height: 500px;
 	width: 90%;
-	margin: 150px auto;
+	margin: 120px auto;
 	display: flex;
 	justify-content: left;
 	align-items: center;
@@ -102,4 +104,61 @@ button:active{
 	transform: rotate(15deg);
 
 }
+.head{
+	font-size: 1.9rem;
+	color: white;
+    margin:0 auto;
+    font-family: 'Raleway', sans-serif;
+}
 
+@media (max-width: 1110px){
+	.head{
+		font-size: 1.5rem;
+	}
+	.logo-img{
+		height: 60px;
+		width: 60px;
+
+	}
+	.navbar{
+		padding-bottom: 5px;
+	}
+	
+}
+@media (max-width: 955px){
+	.head{
+		font-size: 1.2rem;
+	}
+	.logo-img{
+		height: 50px;
+		width: 50px;
+
+	}
+	.navbar{
+		padding-bottom: 5px;
+	}
+	
+}
+@media (max-width: 790px){
+	.head{
+		font-size: 1.0rem;
+	}
+	.logo-img{
+		height: 50px;
+		width: 50px;
+
+	}
+	.navbar{
+		padding-bottom: 3px;
+	}
+	
+}
+
+@media (max-width: 460px){
+	.navbar{
+		display: block;
+		width: 100%;
+	}
+	
+
+}
