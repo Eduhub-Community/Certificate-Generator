@@ -1,70 +1,33 @@
 
-* {
-    margin:0px;
-    padding:0px;
-    box-sizing: border-box;
-}
-.header-cont {
-    height: 5rem;
-    display: flex;
-    align-items: center;
-    background: linear-gradient(to right,rgb(193, 245, 228),rgb(204, 204, 248));
-}
-.header-name {
-    margin:34px 45px;
-    height:80px;
-    border-radius: 50%;
-}
-.navigators-cont {
-    display: flex;
-    margin-left: 5rem;
-    gap: 3rem;
-    font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 1.2rem;
-    color: #2f3640;
-}
-.navigator > a {
-    text-decoration: none;
-    color: #4b4b4b;
-}
-.navigator > a:hover {
-    color: #c44569cc;
-    cursor: pointer;
-}
-.main-programmer-img-cont {
-    height: 100%;
-    width: 45%;
-}
-.main-page-img {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    left:750px;
-}
-@media only screen and (max-width: 426px) {
-    .header-name {
-        margin-left: 1rem;
-    }
-    .navigators-cont {
-        margin-left: 0.8rem;
-        gap: 0rem;
-        font-size: 0.8rem;
-    }
-    .navigator {
-        margin: 0.3rem;
-        font-size: 0.8rem;
-    }
-    .main-page-img{
-        left:100px;
-    }
-}
-
-=======
 body{
 	margin: 0;
 	background-image: -webkit-linear-gradient(65deg,#a683e3 50%,#e4e9fd 50%);
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+/* NAVBAR */
+.navbar{
+    background-color: #a683e3;
+    width: 100%;
+    height: 90px;
+}
+
+.heading{
+    position: relative;
+    right:200px;
+}
+.sub-heading{
+    position: relative;
+    right:500px;
+}
+
+.logo-img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-left: 40px;
+    padding-bottom: 5px;
 }
 .box{
 	height: 500px;
@@ -74,7 +37,7 @@ body{
 	justify-content: left;
 	align-items: center;
 	box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.8);
-	}
+}
 
 input[type="text"]{
     width: 200px;
@@ -102,7 +65,7 @@ form{
 button:hover{
 	background-color: #a683e4;
 	color: white;
-	transition: all .9s;
+	transition: all .3s;
 }
 button:active{
 	background-color: grey;
