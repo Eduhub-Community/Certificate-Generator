@@ -4,22 +4,20 @@ body{
 	background-image: -webkit-linear-gradient(65deg,#a683e3 50%,#e4e9fd 50%);
 	background-repeat: no-repeat;
 	background-size: cover;
-}
+    }
 
 /* NAVBAR */
 .navbar{
+    position: relative;
+    left:350px;
     background-color: #a683e3;
-    width: 100%;
+    width: 50%;
     height: 90px;
 }
-
-.heading{
-    position: relative;
-    right:200px;
-}
-.sub-heading{
-    position: relative;
-    right:500px;
+span{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.3rem;
+    color:white;
 }
 
 .logo-img{
@@ -28,6 +26,12 @@ body{
     border-radius: 50%;
     margin-left: 40px;
     padding-bottom: 5px;
+}
+h1{
+    font-family: 'Raleway', sans-serif;
+    padding:0 0 7px 7px;
+    text-decoration: underline;
+    color: purple ;
 }
 .box{
 	height: 500px;
@@ -43,16 +47,16 @@ input[type="text"]{
     width: 200px;
     height: 30px;
     border-radius: 10px;
-    border:3px solid #a8c688;
+    border:3px solid purple;
     display: block;
     margin-bottom: 20px;
     margin-left: 25px;
 
 }
 button{
-	width: 180px;
+	width: 30;
 	height: 35px;
-    background-color:  #e4e9fd;
+    background-color:  purple;
     cursor: pointer;
     display: block;
     margin-left: 30px;
