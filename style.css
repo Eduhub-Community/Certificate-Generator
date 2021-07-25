@@ -50,12 +50,18 @@ input[type="text"]{
     margin-left: 25px;
 
 }
+.input-field{
+	text-align: center;
+	padding:8px !important;
+	border: none;
+}
 button{
 	width: 30;
 	height: 35px;
     background-color:  purple;
     cursor: pointer;
     display: block;
+	color:white;
     margin-left: 30px;
 
 }
@@ -70,7 +76,7 @@ button:hover{
 }
 button:active{
 	background-color: grey;
-	color: black;
+	color: #fff;
 }
 
 @media only screen and  (max-width: 360px){
