@@ -199,12 +199,12 @@ a{
  }
  .footer {
     padding-top:5px;
-    left: 0;
-    bottom: 0;
+   
     width: 100%;
+	height:auto;
     background-color: #a683e3;
-    color: white;
+    color: #fff;
     text-align: center;
-    font-size: 1rem;
+    
 
   }
