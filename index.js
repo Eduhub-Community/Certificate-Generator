@@ -11,7 +11,7 @@ submit.addEventListener('click',()=>{
 const generetPdf = async (name,cr)=>{
     const {PDFDocument,rgb} = PDFLib;
 
-    const exBytes = await fetch("./sample.pdf").then((res)=>{
+    const exBytes = await fetch("./certificate (4).pdf").then((res)=>{
         return res.arrayBuffer()
     });
 
