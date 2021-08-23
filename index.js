@@ -11,7 +11,7 @@ submit.addEventListener('click',()=>{
 const generetPdf = async (name,cr)=>{
     const {PDFDocument,rgb} = PDFLib;
 
-    const exBytes = await fetch("./flutter.pdf").then((res)=>{
+    const exBytes = await fetch("./twitter.pdf").then((res)=>{
         return res.arrayBuffer()
     });
 
