@@ -1,11 +1,21 @@
-let name = document.getElementById('name');
+let inputTag = document.getElementById("name");
+let certificateForm = document.getElementById("certificate-form");
 let submit = document.getElementById('submit');
-submit.addEventListener('click',()=>{
-    let credentialUser = Math.ceil(Math.random()*10000);
-    let str = "Eduhub"+credentialUser.toString();
-    generetPdf(name.value,str);
-    name.value = '';
-})
+
+const capitalize = (str, lower = false) =>
+  (lower ? str.toLowerCase() : str).replace(/(?:^|\s|["'([{])+\S/g, (match) =>
+    match.toUpperCase()
+  );
+
+certificateForm.addEventListener("submit", (e) => {
+  e.preventDefault()
+  let credentialUser = Math.ceil(Math.random() * 10000);
+  let str = "Eduhub" + credentialUser.toString();
+  const val = capitalize(certificateForm.userName.value.trim());
+  // console.log(val);
+  generetPdf(val, str);
+  certificateForm.reset()
+});
 
 
 const generetPdf = async (name,cr)=>{
@@ -14,7 +24,6 @@ const generetPdf = async (name,cr)=>{
     const exBytes = await fetch("./step.pdf").then((res)=>{
         return res.arrayBuffer()
     });
-
     const exFont = await fetch('./Sanchez-Regular.ttf').then((res)=>{
         return res.arrayBuffer();
     })
@@ -29,13 +38,17 @@ const generetPdf = async (name,cr)=>{
 
     const pages = pdfDoc.getPages();
     const firstP = pages[0];
-    firstP.drawText(name,{
-        x:300,
-        y:310,
-        size:25,
-        font:myFont,
-        color: rgb(0, 0, 0)
-    })
+
+    const textSize = 25;
+    const textWidth = myFont.widthOfTextAtSize(name, textSize);
+
+    firstP.drawText(name, {
+      x: firstP.getWidth() / 2 - textWidth / 2,
+      y: 310,
+      size: textSize,
+      font: myFont,
+      color: rgb(0, 0, 0),
+    });
 
     firstP.drawText(cr,{
         x:550,
