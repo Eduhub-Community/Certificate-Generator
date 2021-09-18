@@ -4,6 +4,7 @@ body{
 	background-image: -webkit-linear-gradient(65deg,#a683e3 50%,#e4e9fd 50%);
 	background-repeat: no-repeat;
 	background-size: cover;
+	width:100%;
     }
 
 /* NAVBAR */
@@ -86,6 +87,9 @@ button:hover{
 	.box{
 		margin-top: 20px;
 	}
+	.input-group{
+		max-width:300px;
+	}
 	
 }
 
@@ -93,7 +97,25 @@ button:hover{
 	.box{
 		margin-top: 45px;
 	}
-	
+	.box form h1{
+		font-size:20px !important;
+		margin-left:15px;
+	}
+	.box form .question{
+		margin-left:50px !important;
+	}
+	.box .submit{
+		margin-left:80px;
+		border-radius:10px;
+	}
+	.container-fluid .row .col h2,p,ul{
+		font-size:12px;
+	}
+	.container-fluid .row .col h3{
+		font-size:15px;
+		margin-left:28px;
+	}
+
 }
 @media (max-width: 1030px){
 	.sample{
@@ -112,6 +134,8 @@ button:hover{
 	font-size: 1.9rem;
 	color: white;
     margin:0 auto;
+	/* margin-left:150px; */
+	/* position:fixed; */
     font-family: 'Raleway', sans-serif;
 }
 
@@ -146,14 +170,18 @@ button:hover{
 @media (max-width: 790px){
 	.head{
 		font-size: 1.0rem;
+		margin-left:80px;
+		margin-top:-75px;
 	}
 	.logo-img{
 		height: 50px;
 		width: 50px;
+		margin-left:10px;
 
 	}
 	.navbar{
 		padding-bottom: 3px;
+		width:320px;
 	}
 	
 }
@@ -163,6 +191,10 @@ button:hover{
 		display: block;
 		width: 100%;
 	}
+	.head{
+		margin-top:-35px;
+	}
+	
 }
 
 .container-fluid{
