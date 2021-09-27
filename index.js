@@ -21,7 +21,7 @@ certificateForm.addEventListener("submit", (e) => {
 const generetPdf = async (name,cr)=>{
     const {PDFDocument,rgb} = PDFLib;
 
-    const exBytes = await fetch("./opportunity.pdf").then((res)=>{
+    const exBytes = await fetch("./opportunity (1).pdf").then((res)=>{
         return res.arrayBuffer()
     });
     const exFont = await fetch('./Sanchez-Regular.ttf').then((res)=>{
